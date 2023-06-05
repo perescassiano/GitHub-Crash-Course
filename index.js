@@ -13,13 +13,6 @@ app.get('/hello', (req, res) => {
     res.send('Hello World Hello!')
 })
 
-app.get('/age', (req, res) => {
-    res.send('Say me your age!')
-});
-app.get('/oi', (req, res) => {
-    res.send('Oi Mundo!')
-})
-
 app.post('/name', (req, res) => {
     const {name} = req.body;
     res.status(201).json(name);
