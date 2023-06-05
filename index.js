@@ -9,10 +9,6 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.get('/hello', (req, res) => {
-    res.send('Hello World Hello!')
-})
-
 app.post('/name', (req, res) => {
     const {name} = req.body;
     res.status(201).json(name);
