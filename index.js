@@ -22,6 +22,11 @@ app.post('/name', (req, res) => {
     res.status(201).json(name);
 })
 
+app.post('/age', (req, res) => {
+    const {age} = req.body;
+    res.status(201).json(age);
+})
+
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
