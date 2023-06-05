@@ -25,6 +25,11 @@ app.post('/name', (req, res) => {
     res.status(201).json(name);
 })
 
+app.post('/lastname', (req, res) => {
+    const {lastname} = req.body;
+    res.status(201).json(lastname);
+})
+
 app.post('/age', (req, res) => {
     const {age} = req.body;
     res.status(201).json(age);
